@@ -1,0 +1,446 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 12, ../sass/_navigation.scss */
+.drop {
+  transition: opacity 0.5s;
+  visibility: hidden;
+  text-align: left;
+  position: absolute;
+  opacity: 0;
+  background-color: #eafde6;
+  left: 0;
+  border-bottom: 1px solid silver;
+  top: 2.4em;
+  width: 96%;
+  padding: 2%; }
+  /* line 24, ../sass/_navigation.scss */
+  .drop ul > li {
+    text-align: left;
+    width: auto;
+    display: block;
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0; }
+    /* line 31, ../sass/_navigation.scss */
+    .drop ul > li a {
+      font-weight: lighter;
+      padding: 0;
+      border-bottom: 1px dotted silver; }
+  /* line 37, ../sass/_navigation.scss */
+  .drop div {
+    float: left; }
+  /* line 40, ../sass/_navigation.scss */
+  .drop .dropLeft {
+    width: 35%;
+    box-sizing: border-box; }
+  /* line 44, ../sass/_navigation.scss */
+  .drop .dropCenter {
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 5%;
+    border-right: 1px solid #1b676b;
+    border-left: 1px solid #1b676b;
+    box-sizing: border-box; }
+  /* line 53, ../sass/_navigation.scss */
+  .drop .dropRight {
+    width: 25%; }
+
+/* line 59, ../sass/_navigation.scss */
+nav {
+  background-color: #1b676b;
+  margin: 0 0 2em;
+  position: relative; }
+  /* line 63, ../sass/_navigation.scss */
+  nav .primary {
+    transition: background-color 0.5s;
+    display: inline-block;
+    text-align: center;
+    margin: 0 2%;
+    width: 19%;
+    padding: 0.6em 1%; }
+    /* line 70, ../sass/_navigation.scss */
+    nav .primary:hover {
+      background-color: #eafde6;
+      border-top: 1px solid #1b676b;
+      padding-top: 0.5375em; }
+      /* line 71, ../sass/_navigation.scss */
+      nav .primary:hover .drop {
+        visibility: visible;
+        opacity: 1;
+        z-index: 10; }
+      /* line 76, ../sass/_navigation.scss */
+      nav .primary:hover a {
+        color: black; }
+    /* line 81, ../sass/_navigation.scss */
+    nav .primary > a {
+      display: block;
+      font-weight: normal;
+      color: white; }
+      /* line 85, ../sass/_navigation.scss */
+      nav .primary > a:hover {
+        color: #88c425; }
+
+/* line 11, ../sass/_content.scss */
+.product {
+  float: left;
+  width: 67%;
+  padding: 1.5%; }
+  /* line 15, ../sass/_content.scss */
+  .product article {
+    transition: background-color 0.5s;
+    width: 23%;
+    margin-right: 1%;
+    padding: 0.5%;
+    float: left;
+    background-color: rgba(126, 208, 214, 0.1); }
+    /* line 16, ../sass/_content.scss */
+    .product article h4 {
+      text-align: center; }
+    /* line 23, ../sass/_content.scss */
+    .product article:hover {
+      background-color: #7ed0d6;
+      color: white; }
+    /* line 28, ../sass/_content.scss */
+    .product article figure img {
+      max-width: 100%; }
+  /* line 33, ../sass/_content.scss */
+  .product section:after {
+    content: "";
+    display: block;
+    clear: both; }
+  /* line 38, ../sass/_content.scss */
+  .product section {
+    margin-bottom: 3em;
+    border-top: 1px solid #1b676b;
+    position: relative;
+    margin-top: 1em;
+    padding-top: 1em; }
+    /* line 44, ../sass/_content.scss */
+    .product section h3 {
+      display: inline-block;
+      background-color: white;
+      position: absolute;
+      padding-right: 0.3em;
+      top: -1.2em; }
+    /* line 52, ../sass/_content.scss */
+    .product section span {
+      background-color: white;
+      padding: 0.3em;
+      position: absolute;
+      right: 0;
+      top: -1.3em; }
+
+/* line 62, ../sass/_content.scss */
+aside {
+  width: 27%;
+  padding: 1.5%;
+  float: right; }
+  /* line 66, ../sass/_content.scss */
+  aside section {
+    box-shadow: 0 0 5px silver;
+    display: block;
+    margin-bottom: 2em;
+    right: 0;
+    padding-right: 5%;
+    background-color: #4e9689;
+    color: #f4fce8;
+    padding: 1.5%; }
+    /* line 76, ../sass/_content.scss */
+    aside section p {
+      padding-right: 15%; }
+  /* line 81, ../sass/_content.scss */
+  aside section:nth-child(even) {
+    background-color: #f4fce8;
+    color: #4e9689; }
+
+/* line 88, ../sass/_content.scss */
+.promo img {
+  width: 100%; }
+
+/* line 93, ../sass/_content.scss */
+html a {
+  color: black;
+  text-decoration: none; }
+
+/* line 103, ../sass/_content.scss */
+.no-js .swipe {
+  width: auto;
+  left: 0;
+  visibility: visible; }
+  /* line 107, ../sass/_content.scss */
+  .no-js .swipe .swipe-wrap > div {
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid white; }
+
+/* line 115, ../sass/_content.scss */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin-top: 2em; }
+  /* line 121, ../sass/_content.scss */
+  .swipe div {
+    width: 100%; }
+    /* line 123, ../sass/_content.scss */
+    .swipe div h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(240, 240, 240, 0.8);
+      padding: 1em;
+      margin: 1em; }
+    /* line 131, ../sass/_content.scss */
+    .swipe div figure {
+      width: 100%;
+      overflow: hidden; }
+      /* line 134, ../sass/_content.scss */
+      .swipe div figure img {
+        width: 100%; }
+
+/* line 140, ../sass/_content.scss */
+.swipe-wrap {
+  overflow: hidden;
+  position: relative; }
+
+/* line 144, ../sass/_content.scss */
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative; }
+  /* line 148, ../sass/_content.scss */
+  .swipe-wrap > div div {
+    position: absolute;
+    color: white;
+    width: 96%;
+    padding: 2%;
+    bottom: 0;
+    background-color: #1b676b; }
+
+/* line 159, ../sass/_content.scss */
+.swipeCommand a {
+  border: none;
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  top: 45%;
+  opacity: 0.8;
+  transition: opacity 0.5s; }
+/* line 169, ../sass/_content.scss */
+.swipeCommand a:hover {
+  opacity: 1; }
+
+/* line 174, ../sass/_content.scss */
+.next {
+  right: 0; }
+
+/* line 178, ../sass/_content.scss */
+.prev {
+  left: 0; }
+
+/* line 182, ../sass/_content.scss */
+.button {
+  display: inline-block;
+  padding: 0.7em;
+  background-color: #f4fce8; }
+
+/* line 11, ../sass/_header.scss */
+#logo {
+  width: 40%;
+  float: left; }
+
+/* line 16, ../sass/_header.scss */
+.user {
+  width: 20%;
+  float: left; }
+
+/* line 21, ../sass/_header.scss */
+.utils {
+  width: 30%;
+  float: right; }
+
+/* line 26, ../sass/_header.scss */
+.up {
+  padding: 1em; }
+
+/* line 30, ../sass/_header.scss */
+.up:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 37, ../sass/_header.scss */
+.user {
+  position: relative;
+  box-sizing: border-box;
+  color: black; }
+  /* line 41, ../sass/_header.scss */
+  .user a {
+    color: black; }
+  /* line 44, ../sass/_header.scss */
+  .user input {
+    box-sizing: border-box;
+    width: 100%; }
+  /* line 48, ../sass/_header.scss */
+  .user h3 {
+    padding: 0.5em;
+    cursor: pointer; }
+    /* line 51, ../sass/_header.scss */
+    .user h3 a {
+      border: none;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 0.6em;
+      display: inline-block; }
+    /* line 58, ../sass/_header.scss */
+    .user h3 a:hover {
+      background-color: rgba(1, 147, 154, 0.9);
+      color: white; }
+  /* line 64, ../sass/_header.scss */
+  .user h3:hover + form, .user form:hover {
+    opacity: 1;
+    height: auto;
+    display: block;
+    z-index: 100;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  /* line 72, ../sass/_header.scss */
+  .user form {
+    display: block;
+    background-color: white;
+    padding: 0.6em;
+    display: none;
+    position: absolute;
+    opacity: 0; }
+
+/* line 82, ../sass/_header.scss */
+[type="text"], [type="password"] {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0.2em;
+  padding: 0.4em;
+  margin-top: 0.6em;
+  color: black; }
+
+/* line 91, ../sass/_header.scss */
+input:focus {
+  border: 1px solid #FF7C00; }
+
+/* line 12, ../sass/screen.scss */
+h1 {
+  font-size: 2em; }
+
+/* line 13, ../sass/screen.scss */
+h2 {
+  font-size: 1.5em; }
+
+/* line 14, ../sass/screen.scss */
+h3 {
+  font-size: 1.17em; }
+
+/* line 15, ../sass/screen.scss */
+h4 {
+  font-size: 1em; }
+
+/* line 16, ../sass/screen.scss */
+h5 {
+  font-size: 0.83em; }
+
+/* line 17, ../sass/screen.scss */
+h6 {
+  font-size: 0.75em; }
+
+/* line 19, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  line-height: 1.6em; }
+
+/* line 23, ../sass/screen.scss */
+html {
+  font-size: 16px; }
+
+/* line 24, ../sass/screen.scss */
+body {
+  padding: 2em 0;
+  background-image: url("../img/bright_squares.png"); }
+
+/* line 29, ../sass/screen.scss */
+.container {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: lighter;
+  line-height: 1.3em;
+  box-shadow: 0 0 5px silver; }
+
+/* line 39, ../sass/screen.scss */
+.container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 45, ../sass/screen.scss */
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  text-indent: -10000px;
+  display: none; }

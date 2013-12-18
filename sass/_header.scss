@@ -1,0 +1,93 @@
+
+
+
+/////////----------------------------------------------------------------------------------
+/////////Header  --------------------------------------------------------------------------
+/////////----------------------------------------------------------------------------------
+
+
+
+
+#logo{
+    width:40%;
+    float:left;
+}
+
+.user{
+    width:20%;
+    float:left;
+}
+
+.utils{
+    width:30%;
+    float:right;
+}
+
+.up{
+    padding:1em;
+}
+
+.up:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+.user{
+    position:relative;
+    box-sizing: border-box;
+    color:black;
+    a{
+        color:black;
+    }
+    input{
+        box-sizing: border-box;
+        width:100%;
+    }
+    h3{
+        padding:0.5em;
+        cursor: pointer;
+        a{
+            border:none;
+            color:black;
+            background-color: rgba(255,255,255,0.95);
+            padding:0.6em;
+            display:inline-block;  
+        }
+        a:hover{
+            background-color:rgba(1, 147, 154,0.9);
+            color:white;
+        }
+        
+    }
+    h3:hover+form, form:hover{
+        opacity:1;
+        height:auto;
+        display: block;
+        z-index: 100;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    }
+
+    form{
+        display:block;
+        background-color: white;
+        padding:0.6em;
+        display:none;
+        position:absolute;
+        opacity:0;
+    }
+}
+
+[type="text"],[type="password"]{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    padding:0.4em;
+    margin-top: 0.6em;
+    color:black;
+}
+
+input:focus{
+border: 1px solid #FF7C00;
+}

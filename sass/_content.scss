@@ -1,0 +1,186 @@
+
+
+
+/////////----------------------------------------------------------------------------------
+/////////Content  -------------------------------------------------------------------------
+/////////----------------------------------------------------------------------------------
+
+
+
+
+.product{
+    float:left;
+    width:67%;
+    padding:1.5%;
+    article{
+        h4{text-align: center;}
+        transition: background-color 0.5s;
+        width:23%;
+        margin-right: 1%;
+        padding:0.5%;
+        float:left;
+        background-color: rgba(126,208,214,0.1);
+        &:hover{
+            background-color: rgb(126,208,214);
+            color:white;
+        }
+        figure{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    section:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+    section{
+        margin-bottom: 3em;
+        border-top: 1px solid rgb(27,103,107);
+        position:relative;
+        margin-top: 1em;
+        padding-top: 1em;
+        h3{
+            display:inline-block;
+            background-color: white;
+            position:absolute;
+            padding-right: 0.3em;
+            top:-1.2em;
+            
+        }
+        span{
+            background-color: white;
+            padding:0.3em;
+            position:absolute;
+            right:0;
+            top:-1.3em;
+        }
+    }
+}
+
+aside{
+    width:27%;
+    padding: 1.5%;
+    float:right;
+    section{
+        box-shadow: 0 0 5px silver;
+        display:block;
+        // margin-right: -26%;
+        margin-bottom: 2em;
+        right: 0;
+        padding-right: 5%;
+        background-color: rgb(78,150,137);
+        color:rgb(244,252,232);
+        padding: 1.5%;
+        p{
+            padding-right: 15%;
+        }
+    }
+
+    section:nth-child(even){
+        background-color: rgb(244,252,232);
+        color: rgb(78,150,137);
+    }
+}
+
+.promo{
+    img{
+        width: 100%;
+    }
+}
+
+html a{
+    color:black;
+    text-decoration: none;
+}
+
+
+
+///////SWIPE
+
+.no-js{
+    .swipe{
+        width:auto;
+        left:0;
+        visibility:visible;
+        .swipe-wrap>div{
+            width:100%;
+            left:0;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin-top: 2em;
+  
+  div{
+    width:100%;
+    h2{
+    position:absolute;
+        top:0;
+        left:0;
+        background-color: rgba(240,240,240,0.8);
+        padding:1em;
+        margin:1em;
+    }
+    figure{
+        width: 100%;
+        overflow:hidden;
+        img{
+            width:100%            
+        }
+    }
+  }
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+  div{
+        position:absolute;
+        color:white;
+        width:96%;
+        padding:2%;
+        bottom:0;
+        background-color: rgb(27,103,107);
+    }
+}
+
+.swipeCommand{
+    a{
+    border:none;
+    font-size: 3em;
+    font-weight: bolder;
+    color:white;
+    position:absolute;
+    top:45%;
+    opacity:0.8;
+    transition:opacity 0.5s;
+    }
+    a:hover{
+        opacity:1;
+    }
+}
+
+.next{
+    right:0;
+}
+
+.prev{
+    left:0;
+}
+
+.button{
+    display:inline-block;
+    padding:0.7em;
+    background-color: rgb(244,252,232);
+}

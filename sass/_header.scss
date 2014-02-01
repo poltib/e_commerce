@@ -5,23 +5,10 @@
 /////////Header  --------------------------------------------------------------------------
 /////////----------------------------------------------------------------------------------
 
-
-
-
-#logo{
-    width:40%;
-    float:left;
+header{
+      margin-bottom: 2em;
 }
 
-.user{
-    width:20%;
-    float:left;
-}
-
-.utils{
-    width:30%;
-    float:right;
-}
 
 .up{
     padding:1em;
@@ -34,60 +21,133 @@
 }
 
 
-.user{
-    position:relative;
-    box-sizing: border-box;
-    color:black;
-    a{
-        color:black;
-    }
-    input{
-        box-sizing: border-box;
-        width:100%;
-    }
-    h3{
-        padding:0.5em;
-        cursor: pointer;
-        a{
-            border:none;
-            color:black;
-            background-color: rgba(255,255,255,0.95);
-            padding:0.6em;
-            display:inline-block;  
-        }
-        a:hover{
-            background-color:rgba(1, 147, 154,0.9);
-            color:white;
-        }
-        
-    }
-    h3:hover+form, form:hover{
-        opacity:1;
-        height:auto;
-        display: block;
-        z-index: 100;
-        box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+#logo a{
+    border:none;
+}
+
+.cart{
+    text-align: center;
+    padding: 0.5em;
+    p{
+        border-top: 1px solid silver; 
+        border-bottom: 1px solid silver; 
+        padding: 0.3em;
+        margin-bottom: 0.3em;
+        margin-top: 0.3em;
     }
 
-    form{
-        display:block;
-        background-color: white;
-        padding:0.6em;
-        display:none;
-        position:absolute;
-        opacity:0;
+}
+
+
+.user{
+    text-align: right;
+    h3{
+        text-align: center;
+        a{ font-size: 0.8em; color: silver; }
+        a:hover{ color: $orange; }
+    }
+    overflow:hidden;
+    position:relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:black;
+    input{
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width:100%;
     }
 }
 
 [type="text"],[type="password"]{
     background-color: transparent;
-    border: 1px solid black;
-    border-radius: 0.2em;
-    padding:0.4em;
-    margin-top: 0.6em;
+    border: 1px solid $darkBlueLight;
+    padding:0.2em;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+    font-size: 1em;
     color:black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: lighter;
+}
+
+
+[type="submit"]:focus, [type="text"]:focus,[type="password"]:focus{
+    outline:none;
+}
+
+[type="submit"]:hover{
+    cursor:pointer;
+    background-color: $orange;
+    border-color: $orange;
+}
+
+[type="submit"]{
+    background-color: $blue;
+    border:1px solid $blue;
+    padding:0.4em;
+    font-size: 1em;
+    color:$sky;
 }
 
 input:focus{
 border: 1px solid #FF7C00;
+}
+
+
+.buttonSearch{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: lighter;
+    border:none;
+    background-color: $blueLight;
+    padding:0;
+    margin:0;
+    -moz-appearance: none;
+    font-size: 1em;
+    left:0;
+    width:15%;
+    border-top: 1px solid $darkBlueLight;
+    border-right: 1px solid $darkBlueLight;
+    border-bottom: 1px solid $darkBlueLight;
+    color:$sky;
+    padding: 0.4em;
+    font-weight: lighter;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.buttonSearch:hover{
+    cursor:pointer;
+    background-color: $blue;
+}
+
+.buttonSearch:focus{
+    outline: none;
+}
+
+#searchField:focus{
+    outline: none;
+    border-color: $orange;
+}
+
+#searchField:focus + .buttonSearch{
+    border-color: $orange;
+}
+
+#searchField{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: lighter;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
+    width:85%;
+    margin:0;
+    padding:0;
+    padding: 0.4em;
+    border-radius: 0;
+    border-color: $darkBlueLight;
+    margin-bottom: 0.5em;
+}
+
+.utils{
+    position:relative;
 }

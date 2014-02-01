@@ -1,3 +1,3 @@
 #refonte e-commerce
 
-[maquette](http://jeremy-thiry.be/projets/e-commerce/html/)
+[maquette](http://jeremy-thiry.be/projets/e)

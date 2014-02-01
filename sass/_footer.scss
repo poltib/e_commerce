@@ -1,0 +1,41 @@
+
+
+/////////----------------------------------------------------------------------------------
+/////////Footer  --------------------------------------------------------------------------
+/////////----------------------------------------------------------------------------------
+
+
+
+.footDiv{
+    border-right: 0.1033333% solid silver;
+    margin-bottom: 1.5em;
+    h4{
+        padding:0.2em;
+        background-color: $blue;
+        color:$sky;
+        margin-bottom: 0.3em;
+    }
+    ul{
+       margin-left:1em;
+    }
+}
+
+footer{
+    >div>div{
+        padding:1em;
+    }
+    p{
+        border-top: 1px solid silver;
+        padding-top: 0.5em; 
+        text-align: center;
+    }
+    div>div:after{
+        content:"";
+        display:block;
+        clear:both; 
+    }
+}
+
+.footDiv:nth-child(3){
+    border:none;
+}
